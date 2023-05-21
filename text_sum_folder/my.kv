@@ -1,0 +1,35 @@
+<MyGrid>:
+
+    data: data
+    output_label:output_label  
+    GridLayout:
+        cols:1
+        size: root.width-200, root.height-200
+        pos:100,100
+
+        Label:
+            text:"Enter your text to summarize here: "
+        TextInput:
+            id:data
+            multiline: True
+            width:200
+            height:100
+        Button:
+            text:"Submit"
+            on_press: root.btn()
+            width:200
+            height:25
+            bold:True
+
+        GridLayout:
+            cols:1
+
+            TextInput:
+                id:output_label
+                hint_text:"The summary will appear here"
+                multiline: True
+                width:200
+                height:100
+            
+            
+            
